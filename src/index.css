@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input,
+button {
+    font: inherit;
+    margin: 0.5rem;
+    display: block;
+    height: 50px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: beige;
+    display: grid;
+    place-content: center;
+}
+
+.app {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#searchItem {
+    flex-grow: 1;
+}
+
+.add {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#addItem {
+    flex-grow: 1;
+}
+
+#addButton {
+    padding: 0.5rem;
+}
+
+.list {
+    width: 100%;
+}
+
+.item {
+    margin: 0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+    width: min(90vw, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.text {
+    flex-grow: 1;
+}
+
+#deleteButton {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border: 3px solid red;
+    height: auto;
 }
